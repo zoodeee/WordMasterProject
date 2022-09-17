@@ -12,6 +12,6 @@
 )
 ![6. 단어 삭제](https://github.com/zoodeee/WordMasterProject/blob/master/WordMasterProject/screenshots/6.jpg?raw=true
 )
-![7. 파일저장](https://github.com/zoodeee/WordMasterProject/blob/master/WordMasterProject/screenshots/7.jpg?raw=true
+![7. 파일저장](https://github.com/zoodeee/WordMasterProject/blob/master/WordMasterProject/screenshots/7.jpg?raw=true)
 ![Dictionary.txt](https://github.com/zoodeee/WordMasterProject/blob/master/WordMasterProject/screenshots/Dictionary.txt.jpg?raw=true)
 ![1. 모든 단어보기](https://github.com/zoodeee/WordMasterProject/blob/master/WordMasterProject/screenshots/1.jpg?raw=true)
