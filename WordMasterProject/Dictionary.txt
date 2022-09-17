@@ -1,0 +1,30 @@
+1|assert|주장하다, 단언하다
+2|accustom|익숙케 하다
+2|insert|넣다
+1|agriculture|농업
+3|deposit|예금하다, 보증금
+2|emphasis|강조
+3|disposition|기질, 성향, 배치
+1|contrary|반대의
+1|postpone|연기하다, 미루다
+1|ray|광선, 번뜩이다
+2|appendix|부록
+2|authority|권위, 권력
+2|impending|임박한
+1|suspect|의심하다, 용의자
+2|suspenders|멜빵
+1|capable|유능한
+1|desert|사막, 버리다
+1|nevertheless|그럼에도 불구하고
+2|exert|쓰다, 행사하다
+1|minority|소수
+3|dispose|정돈하다
+1|sum|총계
+2|impose|지우다, 강요하다
+1|crazy|미친
+2|repose|휴식, 침착
+1|appeal|간청하다, 매력
+3|dispense|분배하다
+1|comment|논평, 비평하다
+2|suspend|매달다, 미루다, 중지하다
+1|leap|뛰다, 도약하다
