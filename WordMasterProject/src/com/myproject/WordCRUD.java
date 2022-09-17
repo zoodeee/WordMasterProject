@@ -2,7 +2,9 @@ package com.myproject;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -74,6 +76,18 @@ public class WordCRUD implements ICRUD{
 		System.out.println("--------------------------------");
 		return idlist;
 	}
+	public void listAll(int level) {
+		int j=0;
+		System.out.println("--------------------------------");
+		for(int i=0;i<list.size();i++) {
+			int ilevel=list.get(i).getLevel();
+			if(ilevel!=level) continue;
+			System.out.print((j+1)+" ");
+			System.out.println(list.get(i).toString());
+			j++;
+		}
+		System.out.println("--------------------------------");
+	}
 	
 	public void updateItem() {
 		System.out.print("=> 수정할 단어 검색 : ");
@@ -100,7 +114,7 @@ public class WordCRUD implements ICRUD{
 		String ans=s.next();
 		if(ans.equalsIgnoreCase("y")) {
 			list.remove((int)idlist.get(id-1));
-			System.out.println("단어가 삭제되었습니다. ");
+			System.out.println("선택한 단어 삭제 완료!!! ");
 		}else
 			System.out.println("취소되었습니다. ");
 	}
@@ -126,5 +140,31 @@ public class WordCRUD implements ICRUD{
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+	}
+
+	public void saveFile() {
+		try {
+			PrintWriter pr=new PrintWriter(new FileWriter("Dictionary.txt"));
+			for(Word one:list) {
+				pr.write(one.toFileString()+"\n");
+			}
+			pr.close();
+			System.out.println("모든 단어 파일 저장 완료!!!");
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+	public void SearchLevel() {
+		System.out.print("=> 레벨(1:초급, 2:중급, 3:고급)선택: ");
+		int level=s.nextInt();
+		listAll(level);
+	}
+
+	public void SearchWord() {
+		System.out.print("=> 원하는 단어는? ");
+		String keyword=s.next();
+		listAll(keyword);
 	}
 }
